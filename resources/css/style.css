@@ -46,6 +46,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  line-height: 2.25rem;
 }
 
 /* Text on the banner is positioned absolute to give it an exact position in its container */
@@ -176,5 +177,49 @@ footer {
 
   .container {
     width: 720px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner  {
+    height: 15rem;
+    line-height: 1.25rem;
+  }
+  .banner_text {
+    font-size: 0.77rem;
+    margin-top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .banner_text h1 {
+    font-size: 1rem;
+  }
+  .item {
+    width: 90%;
+  }
+  .glasses {
+    display: none;
+  }
+  .watch {
+    display: none;
+  }
+  .main {
+    justify-content: center;
+  }
+  .main.container {
+    width: 420px;
+  }
+  .contact.container {
+    width: 420px;
+    flex-direction: column;
+  }
+  .location, .hours {
+    width: 100%;
+  }
+  .hours {
+    margin-top: 0.5rem;
+  }
+  footer {
+    text-align: center;
   }
 }
