@@ -1,8 +1,10 @@
+/* Determining font size to be able to make a all resizable web page */
 html {
   font-family: Helvetica;
   font-size: 18px;
 }
 
+/* Container is the class that limits the width of the content that is shown on page and it's always in the center of the screen */
 .container {
   width: 960px;
   margin-left: auto;
@@ -17,6 +19,7 @@ header {
   color: white;
 }
 
+/* Title is flex to center the content vertically */
 .title {
   display: flex;
   padding: 0.66rem 0;
@@ -27,12 +30,14 @@ header {
   padding: 0 1rem 0 0.5rem;
 }
 
+/* Making the h2 all uppercase and centering it vertically */
 .title h2 {
   align-self: center;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
+/* Banner covers all it's container and its height is fixed */
 .banner {
   background-image: url("../images/moto.jpeg");
   height: 25rem;
@@ -42,6 +47,7 @@ header {
   background-size: cover;
 }
 
+/* Text on the banner is positioned absolute to give it an exact position in its container */
 .banner_text {
   position: absolute;
   margin-top: 9rem;
@@ -63,31 +69,37 @@ nav {
   color: white;
 }
 
+/* Menu items are flex items and they are distributed on the vertical line with same space between them */
 nav ul {
   display: flex;
   justify-content: space-between;
 }
 
+/* Making list content inline-block to make them listed side by side */
 nav li {
   display: inline-block;
   line-height: 3.5rem;
 }
 
+/* Main part is displayed flex so we can make resizable items in it */
 .main {
   display: flex;
   margin-top: 3em;
   justify-content: space-between;
 }
 
+/* In each item the image and text should be shown as a single column, therefore flex-direction is column */
+/* As direction crossed justify-content is used to make all content go down */
 .item {
   align-items: center;
   width: 30%;
   border: 4px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;;
+  justify-content: flex-end;
 }
 
+/* As flex items the images are centerd in all directions */
 .item_image {
   display: flex;
   justify-content: center;
@@ -109,6 +121,7 @@ nav li {
   padding: 0.5rem 0;
 }
 
+/* Contact info is seperated on each side of the container */
 .contact {
   display: flex;
   justify-content: space-between;
